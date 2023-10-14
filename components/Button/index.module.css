@@ -1,0 +1,56 @@
+.btn{
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #1de9b6;
+  padding: 1em;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+.loadingContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+
+}
+.waves {
+  width: 2px;
+  height: 14px;
+  background-color: black;
+  animation: wave-effect 1s linear infinite;
+}
+
+.waves:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.waves:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.waves:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.waves:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes wave-effect {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
